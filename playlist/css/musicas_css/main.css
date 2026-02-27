@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+.content-left, .content-right {
+    background-color: #1e1e1e; /* Cinza mais escuro para as seções */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.artist-info .artist-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-bottom: 15px;
+}
+
+.content-right {
+    flex: 2;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 8px;
+}
+
+.lyrics-container {
+    text-align: center;
+}
+
+
+.lyrics-button {
+    padding: 10px 40px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; 
+    color: white;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.lyrics-button:hover {
+    background-color: #2a527b; }
+
+
+.lyrics-content {
+    background-color: #555;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    white-space: pre-wrap;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+     max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease-out;
+    max-height: 200px; 
+    overflow-y: scroll; 
+}
+
+
+.toggle-checkbox:checked + .lyrics-button + .lyrics-content {
+    max-height: 700px; 
+}
+
+
+.toggle-checkbox:checked + .lyrics-button::after {
+    content: "Esconder Letra";
+}
+
+
+.lyrics-button::after {
+    content: "Mostrar Letra";
+}
+
+.lyrics-button {
+    text-indent: -9999px; 
+    position: relative;
+}
+.lyrics-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-indent: 0; 
+}

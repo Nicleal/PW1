@@ -1,0 +1,12 @@
+a { 
+  color: #f3eeee;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+a:hover {
+  background: #ead6d688;
+  color: #080144;
+}

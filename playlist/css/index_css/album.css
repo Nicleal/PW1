@@ -1,0 +1,29 @@
+.album-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.album:hover {
+  transform: scale(1.02);
+}
+
+.album {
+  width: 150px;
+  flex: 0 0 auto;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.album img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.album p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}

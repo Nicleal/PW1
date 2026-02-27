@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+  .sidebar {
+    width: 0; /* Sidebar invisível em telas muito pequenas */
+    padding: 0;
+  }
+
+  .content {
+    margin-left: 0; /* Remove o espaço da sidebar */
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .album-row {
+    grid-template-columns: repeat(1, 1fr); /* Apenas 1 coluna em telas muito pequenas */
+  }
+
+  .sidebar a {
+    display: none; /* Oculta os links na sidebar */
+  }
+
+  .sidebar button {
+    display: none; /* Oculta o botão na sidebar */
+  }
+}

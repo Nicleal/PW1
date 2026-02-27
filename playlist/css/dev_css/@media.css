@@ -1,0 +1,87 @@
+@media (max-width: 900px) {
+  .team-container {
+    gap: 30px;
+  }
+
+  .developer-card {
+    width: 220px; /* Ajusta o tamanho das cartas */
+    padding: 20px;
+  }
+
+  .developer-card img {
+    width: 130px; /* Ajusta o tamanho das imagens */
+    height: 130px;
+  }
+
+  .developer-card h3 {
+    font-size: 18px; /* Ajusta o tamanho do título */
+  }
+
+  .developer-card p {
+    font-size: 12px; /* Ajusta o tamanho da descrição */
+  }
+}
+
+/* Para telas de até 600px (como celulares) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px; /* Reduz o tamanho do título em telas pequenas */
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Menor espaçamento entre as cartas */
+  }
+
+  .developer-card {
+    width: 90%; /* Aumenta a largura das cartas */
+    padding: 15px;
+  }
+
+  .developer-card img {
+    width: 120px; /* Ajusta o tamanho da imagem */
+    height: 120px;
+  }
+
+  .developer-card h3 {
+    font-size: 16px; /* Ajusta o tamanho do título */
+  }
+
+  .developer-card p {
+    font-size: 12px; /* Ajusta o tamanho da descrição */
+  }
+
+  a {
+    padding: 8px; /* Ajusta o tamanho do link */
+  }
+}
+
+/* Para telas de até 400px (smartphones pequenos) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .developer-card {
+    width: 100%; /* As cartas vão ocupar toda a largura */
+    padding: 10px;
+  }
+
+  .developer-card img {
+    width: 100px; /* Ajusta o tamanho da imagem */
+    height: 100px;
+  }
+
+  .developer-card h3 {
+    font-size: 14px; /* Ajusta o tamanho do título */
+  }
+
+  .developer-card p {
+    font-size: 10px; /* Ajusta o tamanho da descrição */
+  }
+
+  a {
+    padding: 6px; /* Ajusta o tamanho do link */
+  }
+}
