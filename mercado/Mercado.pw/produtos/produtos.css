@@ -1,0 +1,111 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #013a73;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #85cffa;
+}body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.produto-container {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.imagem-produto img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.detalhes-produto {
+  padding: 20px;
+  flex: 1;
+}
+
+.precos {
+  margin-top: 20px;
+}
+
+.preco-antigo {
+  color:#e74c3c;
+  font-size: 25px;
+}
+
+.preco-atual {
+  font-size: 30px;
+  color: #00015a;
+}
+
+.desconto {
+  color: #00015a;
+  font-size: 20px;
+}
+
+.comprar {
+  background: #00015a;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
